@@ -2,9 +2,19 @@
 
 \usepackage[left=0.4 in,top=0.4in,right=0.4 in,bottom=0.4in]{geometry}
 \usepackage{hyperref}
+\usepackage{enumitem}
 
 \newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
 \newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+
+% Resume item command
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
 
 \begin{document}
 
@@ -12,7 +22,7 @@
     Email: \href{mailto:lvcongrui@m.ldu.edu.cn}{lvcongrui@m.ldu.edu.cn} \textbar{} 
     Tel: +86 18706303539 \textbar{} 
     Github: \href{https://github.com/CongruiLyu}{https://github.com/CongruiLyu} \textbar{} 
-    个人网页: 占位
+    个人网页: \href{https://CongruiLyu.github.io/}{https://CongruiLyu.github.io/}
 \end{center}
 
 \vspace{0.1in}
@@ -20,6 +30,81 @@
 \begin{center}
     \textbf{\large CONGRUI LYU (LV)}
 \end{center}
+
+\vspace{0.1in}
+
+\section{RESEARCH INTEREST}
+Human-Computer Interaction (HCI), Human-AI Interaction, Affective Computing, Multimodal Interaction, Intelligent Systems for Well-being \& Self-regulation, Lightweight Deep Learning, Computer Vision and image processing
+
+\section{EDUCATION}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \resumeSubheading
+    {Ludong University}{CHN}
+    {B.Eng. in Computer Science (Expected 2027)}{September 2023 - present}
+    \begin{itemize}
+        \item GPA: 3.4/4.0
+        \item Centesimal grade average: 84
+    \end{itemize}
+\end{itemize}
+
+\section{RESEARCH EXPERIENCE}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \resumeSubheading
+    {ImpulseSense: Research on Multimodal Emotion Aware Intervention for Impulsive Shopping (Leader)}{}
+    {Advisor: -}{Oct 2025 - Present}
+    \begin{itemize}
+        \item Developed a research prototype leveraging multimodal affective computing (facial expressions, behavioral trajectories, physiological signals) to detect impulsive shopping behaviors in real time, provide tiered interventions, and perform dynamic behavior data analysis, systematically breaking unhealthy shopping habits.
+        \item Designed a multimodal intervention framework based on psychological theory (emotion regulation model), implementing intervention chains to promote rational consumption and improve impulsive shopping habits.
+        \item Built interactive interfaces and shopping simulation workflows using React, TypeScript, and Expo to support user studies and evaluate intervention effectiveness.
+    \end{itemize}
+    
+    \resumeSubheading
+    {DPFA Net: Research on Lightweight Dual-Path Neural Network for Mobile Food Image Recognition}{}
+    {Advisor: Guorui Sheng}{Dec 2024 - Sep 2025}
+    \begin{itemize}
+        \item Developed a lightweight dual-path network optimized for mobile and resource-limited devices.
+        \item Proposed the LR Block to capture both intra- and cross-patch dependencies for stronger local representation.
+        \item Designed the PM-ViT global branch by integrating Mamba-based sequence modeling with separable attention.
+        \item Result: Published at ChinaMM 2025 and accepted by Multimedia Systems.
+    \end{itemize}
+    
+    \resumeSubheading
+    {NutriSnap: Research on Mobile Food Recognition and Personalized Nutrition Tracking Application (Leader)}{}
+    {Advisor: Yancun Yang}{Nov 2024 - Feb 2025}
+    \begin{itemize}
+        \item Developed a lightweight YOLO-based model for cafeteria food recognition with automatic calorie estimation and daily intake tracking.
+        \item Built a nutrition database and personalized recommendation module for healthy diet management.
+        \item Collaborated with the university cafeteria to validate and deploy the system in real-world scenarios.
+        \item Result: Delivered a deployable nutrition-tracking app; won the 2025 China College Student Computer Design Contest (Software Track) National Gold Prize.
+    \end{itemize}
+\end{itemize}
+
+\section{PUBLICATIONS}
+\begin{itemize}
+    \item \textbf{DPFA-Net: A Lightweight Hybrid Neural Network with Dual Path Feature Aggregation for Food Image Recognition}\\
+    X. Zhu$^{\dagger}$, W. Zhang$^{\dagger}$, Y. Sheng$^{\dagger}$, C. Lv$^{\dagger}$, G. Sheng, W. Min, S. Jiang\\
+    \textit{Multimedia Systems}, 2025. (DOI coming soon)
+\end{itemize}
+
+\section{PATENT}
+\begin{itemize}
+    \item \textbf{Lightweight Food Image Recognition Model with Dual-Path Feature Aggregation}\\
+    Lv, C., Sheng, G., Zhu, X., Sheng, Y., Zhang, W., Sun, Q.\\
+    Invention Patent (CN), Application No. 2025115630577, Submitted Sep 2025, Pending. (First Inventor)
+\end{itemize}
+
+\section{AWARDS \& HONORS}
+\begin{itemize}
+    \item [10/2025] Received Provincial Government Scholarship, top 5\%
+    \item [08/2025] National Award (Gold Prize) in the 2025 China Computer Design Contest (Software Track)
+\end{itemize}
+
+\section{SKILLS}
+\begin{itemize}
+    \item \textbf{Programming \& Development:} C / C++ / C\#, Java, Python, JavaScript, SQL, MATLAB, LaTeX
+    \item \textbf{Frameworks \& Tools:} PyTorch, NumPy, HTML, React, Unity, Figma, Cinema 4D (C4D), Adobe Photoshop (PS), SPSS, Microsoft Office (Word / Excel / PowerPoint), Raspberry Pi
+    \item \textbf{Languages:} Mandarin Chinese, English
+\end{itemize}
 
 \end{document}
 
